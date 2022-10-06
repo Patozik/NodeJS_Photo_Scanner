@@ -1,0 +1,16 @@
+<%- include('partials/header'); -%>
+
+  <div class="container pt-4" style="max-width: 500px">
+    <div class="card">
+      <div class="card-body text-center">
+        <p>Podaj adres strony, na której chcesz znaleźć zdjęcia</p>
+        <form action="/skanuj" method="POST">
+          <input type="text" class="form-control" name="url" placeholder="https://...">
+          <button class="btn btn-info mt-2">Skanuj</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<%- include('partials/footer'); -%>
+  
